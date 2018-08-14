@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main (void){
+//Aglomerado de dados
+int i, vetor [10];
+
+//Entrada de Dados
+
+
+	for (i=0; i<=9; i++){
+	cout <<"Digite o numero  "<< i + 1<<": "<<endl;
+	cin >> vetor[i];
+}
+//Computação
+
+	for (i=0; i<=9; i++){
+	cout<<"Posicao "<<i<<" do vetor  e "<<vetor[i]<<endl;
+}
+
+
+system ("pause");
+return 0;
+
+}
+                
+         
+    
