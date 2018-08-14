@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+double maiorEntreQuatro(double n1, double n2, double n3, double n4){
+	
+			cout << "to na funcao \n";
+			
+			if (n1>n2  && n1>n3 && n1>n4){
+					return n1;
+			}else{
+				
+			if (n2>n1 && n2>n3 && n2>n4){
+					return n2;
+			}else{
+				
+				if (n3>n1 && n3>n2 && n3>n4){	
+					return n3;
+			}else{
+				    return n4;
+		}				
+			}
+				}
+		}
+				
+int main (){
+		int n1, n2, n3, n4;
+		do{
+		
+		cout<<"to na main: \n \n";	
+		cout<<"informe um numero: \n";
+			cin>>n1;
+		cout<<"informe o segundo numero: \n";
+			cin>>n2;
+		cout<<"informe o terceiro numero: \n";
+			cin>>n3;	
+		cout<<"informe quarto numero: \n";
+			cin>>n4;	
+		cout<<"o maior eh : \n \n"  << maiorEntreQuatro(n1,n2,n3,n4);
+	} while(n1,n2,n3,n4 != 0);
+	system("PAUSE");
+	return 0;
+}
