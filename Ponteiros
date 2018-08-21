@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+void troca (int *a, int *b){
+     int temp;
+     temp = *a;
+     *a = *b;
+     *b = temp;
+     return;
+}     
+int main (){
+    int vit, let; //temp
+    cout<<"valor do vitor:";
+    cin>>vit;
+    cout<<"valor da leticia:";
+    cin>>let;
+   
+//temp = vit;
+//vit = let;
+//let = temp;
+troca(&vit,&let);
+cout<<"conteudo de vit:"<<vit<<"\n";      
+cout<<"conteudo de let:"<<let<<"\n"; 
+cout<<"endereço de vit:"<<&vit<<"\n";      
+cout<<"endereço de let:"<<&let<<"\n";       
+system("PAUSE");
+return 0;
+}    
+
+
+
+//Ponteiros
+//(paragem de parametros por endereço ou referencia)
+//& "endereço de"
+//* "ponteiro para"
