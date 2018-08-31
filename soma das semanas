@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;     
+int calcular(int a, int b){
+    return a+b;
+}
+
+int main(){
+    int valor,a,b;
+
+cout<<"soma das semanas" <<endl;
+cout<<"Digite um valor de 1 a 7: ";
+cin >>a;
+cout<<"Digite o segundo valor de 1 a 7:";
+cin >>b;
+
+cout<<"O resultado  da soma eh:" <<calcular(a,b);
+valor = calcular(a,b);
+
+if (valor == 1)
+printf ("Domingo\n");
+else
+if (valor == 2)
+printf ("Segunda\n");
+else
+if (valor == 3)
+printf ("Terca\n");
+else
+if (valor == 4)
+printf ("Quarta\n");
+else
+if (valor == 5)
+printf ("Quinta\n");
+else
+if (valor == 6)
+printf ("Sexta\n");
+else
+if (valor == 7)
+printf ("Sabado\n");
+
+else
+printf ("Valor invalido!\n");
+
+system ("PAUSE");
+return 0;
+}
