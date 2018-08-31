@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int calcular(int soma,int valor){
+	return soma+=valor;
+}
+
+
+	int main(){
+        int valor,soma=0;
+	do{
+		system("cls");
+		cout<<"Digite um valor diferente de 0:" <<endl;
+		cout<<"Digite 0 pra parar"<<endl;
+		scanf("%i", &valor);
+		if(valor%2==0){
+	soma=calcular(soma,valor);
+		
+		}
+	}while(valor!=0);
+	cout<<"A soma dos numeros pares eh:" <<soma <<endl;
+system("PAUSE");
+return 0;
+}
